@@ -1,0 +1,57 @@
+{
+  "unpublishedPage": {
+    "name": "LoginModal",
+    "slug": "loginmodal",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 1224,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 1020,
+          "containerStyle": "none",
+          "snapRows": 51,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 87,
+          "minHeight": 530,
+          "parentColumnSpace": 1,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0
+        },
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "LoginModal_Auth.continue",
+              "name": "Auth.continue",
+              "collectionId": "LoginModal_Auth",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async () => {\n  if (!appsmith.URL.fullPath.includes('#access_token=')) return storeValue('tab', 'signin');\n  appsmith.URL.fullPath.split('#')[1].split('&').forEach(i => {\n    const [key, value] = i.split('=');\n    storeValue(key, value);\n  });\n  Check.statusCheck();\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
+        "layoutOnLoadActionErrors": [],
+        "validOnPageLoadActions": true,
+        "id": "LoginModal",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": [],
+    "isHidden": false
+  },
+  "deleted": false,
+  "gitSyncId": "64961e46fd339e5d2dc31191_6496f1439135f82ab51b9b3b"
+}

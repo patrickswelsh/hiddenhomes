@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "Check",
+    "pageId": "LoginModal",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "LoginModal_Check",
+  "deleted": false,
+  "gitSyncId": "64961e46fd339e5d2dc31191_64d7a402e864290b925f4a74"
+}

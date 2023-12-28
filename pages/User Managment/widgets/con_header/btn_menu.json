@@ -1,0 +1,74 @@
+{
+    "isCompact": false,
+    "boxShadow": "none",
+    "widgetName": "btn_menu",
+    "displayName": "Menu Button",
+    "iconSVG": "/static/media/icon.0341d17d67020c8bfc560cc5928af2a7.svg",
+    "topRow": 1,
+    "bottomRow": 5,
+    "parentRowSpace": 10,
+    "type": "MENU_BUTTON_WIDGET",
+    "hideCard": false,
+    "animateLoading": true,
+    "parentColumnSpace": 19.8125,
+    "dynamicTriggerPathList": [
+        {"key": "menuItems.menuItem1.onClick"},
+        {"key": "menuItems.menuItemz1q870w7q4.onClick"},
+        {"key": "menuItems.menuItems917w1jnlu.onClick"}
+    ],
+    "leftColumn": 62,
+    "dynamicBindingPathList": [
+        {"key": "menuColor"},
+        {"key": "borderRadius"}
+    ],
+    "isDisabled": false,
+    "key": "5rvkd0pge1",
+    "isDeprecated": false,
+    "rightColumn": 64,
+    "iconName": "chevron-down",
+    "menuVariant": "TERTIARY",
+    "widgetId": "6eufmwkj4y",
+    "menuItems": {
+        "menuItem1": {
+            "onClick": "{{utils.signOut();}}",
+            "iconName": "log-out",
+            "widgetId": "",
+            "index": 2,
+            "label": "Sign out",
+            "id": "menuItem1",
+            "isVisible": true,
+            "isDisabled": false
+        },
+        "menuItemz1q870w7q4": {
+            "onClick": "{{navigateTo('User Managment', {}, 'SAME_WINDOW')}}",
+            "iconName": "user",
+            "widgetId": "fwk6n3esr5",
+            "index": 1,
+            "id": "menuItemz1q870w7q4",
+            "label": "Manage users",
+            "isDisabled": false,
+            "isVisible": true
+        },
+        "menuItems917w1jnlu": {
+            "onClick": "{{navigateTo('View Applications', {}, 'SAME_WINDOW')}}",
+            "iconName": "eye-open",
+            "widgetId": "ncg59f7mo7",
+            "index": 0,
+            "id": "menuItems917w1jnlu",
+            "label": "View Applications",
+            "isDisabled": false,
+            "isVisible": true
+        }
+    },
+    "isVisible": true,
+    "label": "",
+    "version": 1,
+    "parentId": "nav7jnj462",
+    "renderMode": "CANVAS",
+    "isLoading": false,
+    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+    "menuItemsSource": "STATIC",
+    "menuColor": "{{appsmith.theme.colors.backgroundColor}}",
+    "iconAlign": "left",
+    "placement": "CENTER"
+}

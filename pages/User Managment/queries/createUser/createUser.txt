@@ -1,0 +1,10 @@
+INSERT INTO user_auth
+  (first_name, last_name, email, role, password_hash)
+VALUES
+  (
+    {{ inp_firstName.text }},
+    {{ inp_lastName.text }},
+    {{ inp_email.text }},
+		{{sel_role.selectedOptionValue}},
+		{{this.params.passwordHash}}
+  );

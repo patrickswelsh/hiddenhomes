@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "ZipPrep",
+    "pageId": "UserDashboard",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "UserDashboard_ZipPrep",
+  "deleted": false,
+  "gitSyncId": "64961e46fd339e5d2dc31191_658da794969c4c7d35be4626"
+}

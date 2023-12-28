@@ -1,0 +1,70 @@
+{
+  "unpublishedPage": {
+    "name": "User Managment",
+    "slug": "user-managment",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 1224,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 970,
+          "containerStyle": "none",
+          "snapRows": 99,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 87,
+          "minHeight": 1010,
+          "parentColumnSpace": 1,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0
+        },
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "User Managment_utils.getAllUsers",
+              "name": "utils.getAllUsers",
+              "collectionId": "User Managment_utils",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async () => {\n  const users = await getUsers.run();\n  return users.map(u => {\n    return {\n      FirstName: u.first_name,\n      LastName: u.last_name,\n      AccountType: u.role,\n      Email: u.email,\n      DateAdded: u.created,\n      LastActive: u.last_login,\n      Id: u.id\n    };\n  });\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "User Managment_utils.userToken",
+              "name": "utils.userToken",
+              "collectionId": "User Managment_utils",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async () => {\n  const token = appsmith.store.token;\n  return jsonwebtoken.decode(token, 'secret');\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
+        "layoutOnLoadActionErrors": [],
+        "validOnPageLoadActions": true,
+        "id": "User Managment",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": [],
+    "isHidden": true
+  },
+  "deleted": false,
+  "gitSyncId": "64961e46fd339e5d2dc31191_64d7957e6e14801e744e8a1b"
+}

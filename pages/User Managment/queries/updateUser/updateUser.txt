@@ -1,0 +1,5 @@
+UPDATE user_auth
+  SET first_name = {{inp_editFirstName.text}},
+	last_name = {{inp_editLastName.text}},
+	role = {{sel_editRole.selectedOptionValue}}
+  WHERE id = {{ tbl_users.triggeredRow.Id }};

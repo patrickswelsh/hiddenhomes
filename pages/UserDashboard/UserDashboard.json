@@ -1,0 +1,58 @@
+{
+  "unpublishedPage": {
+    "name": "UserDashboard",
+    "slug": "userdashboard",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 4896,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 1640,
+          "containerStyle": "none",
+          "snapRows": 124,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 87,
+          "minHeight": 1292,
+          "dynamicTriggerPathList": [],
+          "parentColumnSpace": 1,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0
+        },
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "UserDashboard_ZipPrep.getIds",
+              "name": "ZipPrep.getIds",
+              "collectionId": "UserDashboard_ZipPrep",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async function () {\n  GetState.run().then(data => {\n    storeValue('coords', [data[0]['lat'], data[0]['lng']]);\n    ReadZips.run().then(data => {\n      var ids = [];\n      var zips = [];\n      for (const i in data) {\n        const id = data[i]['place_id'];\n        const zip = data[i]['postal_code'];\n        ids.push(id);\n        zips.push(zip);\n      }\n      storeValue('idRead', String(ids));\n      storeValue('zipRead', String(zips));\n    });\n  });\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
+        "layoutOnLoadActionErrors": [],
+        "validOnPageLoadActions": true,
+        "id": "UserDashboard",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": [],
+    "isHidden": false
+  },
+  "deleted": false,
+  "gitSyncId": "64961e46fd339e5d2dc31191_64d7957e6e14801e744e8a17"
+}
