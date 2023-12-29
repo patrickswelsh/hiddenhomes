@@ -32,7 +32,7 @@
       ],
       "encodeParamsToggle": true,
       "queryParameters": [],
-      "body": "{{appsmith.store.prefs}}",
+      "body": "{{appsmith.store.prefs}}\n\n",
       "bodyFormData": [],
       "httpMethod": "POST",
       "selfReferencingDataPaths": [],

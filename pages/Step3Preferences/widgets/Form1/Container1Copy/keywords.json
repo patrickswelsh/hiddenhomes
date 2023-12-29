@@ -27,7 +27,7 @@
         "Inputs"
     ],
     "isLoading": false,
-    "regex": "[1900-2023]*$",
+    "regex": "",
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
     "originalBottomRow": 34,
     "mobileBottomRow": 32,
@@ -55,7 +55,7 @@
     "isDeprecated": false,
     "rightColumn": 61,
     "widgetId": "2fcqvbtzqq",
-    "errorMessage": "Input a value within the allowable range: 1900-2023",
+    "errorMessage": "",
     "minWidth": 450,
     "label": "Keywords",
     "parentId": "dx6v4pgeq0",
