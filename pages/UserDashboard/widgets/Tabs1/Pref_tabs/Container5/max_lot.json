@@ -36,7 +36,7 @@
     "hideCard": false,
     "mobileRightColumn": 23,
     "parentColumnSpace": 11.6640625,
-    "dynamicTriggerPathList": [],
+    "dynamicTriggerPathList": [{"key": "onOptionChange"}],
     "labelPosition": "Top",
     "labelTextColor": "#231f20",
     "sourceData": "[\n  {\n    \"label\": \"0 Acres\",\n    \"value\": \"0\"\n  },\n  {\n    \"label\": \"Quarter Acre\",\n    \"value\": \"10890\"\n  },\n  {\n    \"label\": \"Half Acre\",\n    \"value\": \"21780\"\n  },\n\t{\n    \"label\": \"1 Acre\",\n    \"value\": \"43560\"\n  },\n  {\n    \"label\": \" 5 Acres\",\n    \"value\": \"217800\"\n  },\n\t{\n    \"label\": \"10 Acres\",\n    \"value\": \"435600\"\n  },\n  {\n    \"label\": \"20 Acres\",\n    \"value\": \"871200\"\n  },\n  {\n    \"label\": \"50 Acres\",\n    \"value\": \"2178000\"\n  },\n\t{\n    \"label\": \"100 Acre\",\n    \"value\": \"4356000\"\n  },\n  {\n    \"label\": \" 250 Acres\",\n    \"value\": \"10890000\"\n  }\n]",
@@ -56,5 +56,6 @@
     "originalTopRow": 58,
     "mobileLeftColumn": 3,
     "maxDynamicHeight": 9000,
+    "onOptionChange": "{{Prefs.setPrefs();}}",
     "minDynamicHeight": 4
 }

@@ -3,7 +3,7 @@
     "boxShadow": "none",
     "mobileBottomRow": 37,
     "widgetName": "Button5CopyCopy",
-    "onClick": "{{UpdateUser.run().then(() => {\n  navigateTo('UserDashboard', {}, 'SAME_WINDOW');\n}).catch(() => {\n  navigateTo('UserDashboard', {}, 'SAME_WINDOW');\n});}}",
+    "onClick": "{{UpdateUser.run().then(() => {\n  navigateTo('UserDashboard', {}, 'SAME_WINDOW');\n}).catch(() => {\n  showAlert('Whoops! Something Went Wrong. Please Try Again.', 'error');\n});}}",
     "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
     "displayName": "Button",
     "iconSVG": "https://appcdn.appsmith.com/static/media/icon.7beb9123fb53027d9d6b778cdfe4caed.svg",

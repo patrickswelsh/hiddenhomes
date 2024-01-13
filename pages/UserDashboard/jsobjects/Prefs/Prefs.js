@@ -1,18 +1,17 @@
 export default {
 	async setPrefs () {
-		if (min_year.text == "" | min_year.text == undefined ){var miny = null}else{miny = Number(min_year.text)}
+		if (min_year.text == "" | min_year.text == undefined){var miny = null}else{miny = Number(min_year.text)}
 		if (max_year.text == "" | max_year.text == undefined){var maxy = null}else{maxy = Number(max_year.text)} 
-		if (min_lot.selectedOptionValue == ""){var minl = null}else{minl = Number(min_lot.selectedOptionValue)} 
-		if (max_lot.selectedOptionValue == ""){var maxl = null}else{maxl = Number(max_lot.selectedOptionValue)}
+		if (min_lot.selectedOptionValue == "" | min_lot.selectedOptionValue == undefined){var minl = null}else{minl = Number(min_lot.selectedOptionValue)} 
+		if (max_lot.selectedOptionValue == "" | max_lot.selectedOptionValue == undefined){var maxl = null}else{maxl = Number(max_lot.selectedOptionValue)}
 		if (min_price.text == "" | min_price.text == undefined){var minp = null}else{minp = Number(min_price.text)} 
 		if (max_price.text == "" | max_price.text == undefined){var maxp = null}else{maxp = Number(max_price.text)} 
-		if (min_beds.selectedOptionValue == ""){var minb = null}else{minb = Number(min_beds.selectedOptionValue)} 
-		if (max_beds.selectedOptionValue == ""){var maxb = null}else{maxb = Number(max_beds.selectedOptionValue)}
-		if (min_sqft.selectedOptionValue == ""){var mins = null}else{mins = Number(min_sqft.selectedOptionValue)} 
-		if (max_sqft.selectedOptionValue == ""){var maxs = null}else{maxs = Number(max_sqft.selectedOptionValue)} 
-		if (max_hoa.text == ""){var maxh = null}else{maxh = Number(max_hoa.text)}
-		if (min_days_on_mkt.text == ""){var mind = null}else{mind = Number(min_days_on_mkt.text)}
-		if (keywords.text == ""){var keyw = null}else{keyw = keywords.text}
+		if (min_beds.selectedOptionValue == "" | min_beds.selectedOptionValue == undefined){var minb = null}else{minb = Number(min_beds.selectedOptionValue)} 
+		if (max_beds.selectedOptionValue == "" | max_beds.selectedOptionValue == undefined){var maxb = null}else{maxb = Number(max_beds.selectedOptionValue)}
+		if (min_sqft.selectedOptionValue == "" | min_sqft.selectedOptionValue == undefined){var mins = null}else{mins = Number(min_sqft.selectedOptionValue)} 
+		if (max_sqft.selectedOptionValue == "" | max_sqft.selectedOptionValue == undefined){var maxs = null}else{maxs = Number(max_sqft.selectedOptionValue)} 
+		if (max_hoa.text == "" | max_hoa.text == undefined){var maxh = null}else{maxh = Number(max_hoa.text)}
+		if (days_on_mkt.text == "" | days_on_mkt.text == undefined){var mind = null}else{mind = Number(days_on_mkt.text)}
 		
 		storeValue('prefs', [{
 			"user_id": appsmith.store.uid,
@@ -35,7 +34,7 @@ export default {
 			"max_beds": maxb,
 			"min_sqft": mins,
 			"max_sqft": maxs,
-			"keywords": keyw,
+			"keywords": keywords.text,
 			"max_hoa": maxh,
 			"min_days_on_mkt": mind
 			
@@ -46,6 +45,7 @@ export default {
 	async getPrefs () {
 		return GetPrefs.run()
 		.then(data =>{
+			console.log(data)
 		var typs = []
 			if (data[0] == undefined){
 				storeValue('typs',undefined)
@@ -60,8 +60,8 @@ export default {
 			storeValue('mins', undefined)
 			storeValue('maxs', undefined)
 			storeValue('keywords', undefined)
-			storeValue('minh',undefined)
-			storeValue('mind',undefined)
+			storeValue('minh', undefined)
+			storeValue('mind', undefined)
 			}else{
 			if (data[0]['single_family'])(typs.push('single_family'))
 			if (data[0]['multi_family'])(typs.push('multi_family'))
@@ -70,23 +70,35 @@ export default {
 			if (data[0]['farm'])(typs.push('farm'))
 			
 			storeValue('typs',typs)
-			storeValue('miny', data[0]['min_built'])
-			storeValue('maxy', data[0]['max_built'])
-			storeValue('minl', String(data[0]['min_lot']))
-			storeValue('maxl', String(data[0]['max_lot']))
-			storeValue('minp', data[0]['min_price'])
-			storeValue('maxp', data[0]['max_price'])
-			storeValue('minb', String(data[0]['min_beds']))
-			storeValue('maxb', String(data[0]['max_beds']))
-			storeValue('mins', String(data[0]['min_sqft']))
-			storeValue('maxs', String(data[0]['max_sqft']))
-			storeValue('keywords', String(data[0]['keywords']))
-			storeValue('minh', String(data[0]['min_hoa']))
-			storeValue('mind', String(data[0]['min_days_on_mkt']))}
+			if (data[0]['min_built'] == null){storeValue('miny',undefined)}else{
+			storeValue('miny', data[0]['min_built'])}
+			if (data[0]['max_built'] == null){storeValue('maxy',undefined)}else{
+			storeValue('maxy', data[0]['max_built'])}
+			if (data[0]['min_lot'] == null){storeValue('minl',undefined)}else{
+			storeValue('minl', String(data[0]['min_lot']))}
+			if (data[0]['max_lot'] == null){storeValue('maxl',undefined)}else{
+			storeValue('maxl', String(data[0]['max_lot']))}
+			if (data[0]['min_price'] == null){storeValue('minp',undefined)}else{
+			storeValue('minp', data[0]['min_price'])}
+			if (data[0]['max_price'] == null){storeValue('maxp',undefined)}else{
+			storeValue('maxp', data[0]['max_price'])}
+			if (data[0]['min_beds'] == null){storeValue('minb',undefined)}else{
+			storeValue('minb', String(data[0]['min_beds']))}
+			if (data[0]['max_beds'] == null){storeValue('maxb',undefined)}else{
+			storeValue('maxb', String(data[0]['max_beds']))}
+			if (data[0]['min_sqft'] == null){storeValue('mins',undefined)}else{
+			storeValue('mins', String(data[0]['min_sqft']))}
+			if (data[0]['max_sqft'] == null){storeValue('maxs',undefined)}else{
+			storeValue('maxs', String(data[0]['max_sqft']))}
+			if (data[0]['keywords'] == null){storeValue('keywords',undefined)}else{
+			storeValue('keywords', String(data[0]['keywords']))}
+			if (data[0]['min_hoa'] == null){storeValue('minh',undefined)}else{
+			storeValue('minh', String(data[0]['min_hoa']))}
+			if (data[0]['min_days_on_mkt'] == null){storeValue('mind',undefined)}else{
+			storeValue('mind', String(data[0]['min_days_on_mkt']))}}
 
 		});
 	}
 	
 	
 }
-

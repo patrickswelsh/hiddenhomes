@@ -13,7 +13,7 @@
     ],
     "topRow": 54,
     "bottomRow": 60,
-    "tooltip": "Resets the preferences fields to their original state",
+    "tooltip": "Save Preferences",
     "type": "BUTTON_WIDGET",
     "hideCard": false,
     "mobileRightColumn": 46,

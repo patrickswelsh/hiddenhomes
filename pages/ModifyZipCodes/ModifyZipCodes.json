@@ -35,7 +35,7 @@
               "confirmBeforeExecute": false,
               "pluginType": "JS",
               "jsonPathKeys": [
-                "async function () {\n  GetState.run().then(data => {\n    storeValue('coords', [data[0]['lat'], data[0]['lng']]);\n    ReadZips.run().then(data => {\n      var ids = [];\n      var zips = [];\n      for (const i in data) {\n        const id = data[i]['place_id'];\n        const zip = data[i]['postal_code'];\n        ids.push(id);\n        zips.push(zip);\n      }\n      storeValue('idRead', String(ids));\n      storeValue('zipRead', String(zips));\n    });\n  });\n}"
+                "async function () {\n  GetState.run().then(data => {\n    storeValue('coords', [data[0]['lat'], data[0]['lng']]);\n    ReadZips.run().then(data => {\n      var ids = [];\n      var zips = [];\n      for (const i in data) {\n        const id = data[i]['place_id'];\n        const zip = data[i]['postal_code'];\n        ids.push(id);\n        zips.push(zip);\n      }\n      storeValue('idRead', String(ids));\n      storeValue('zipRead', String(zips));\n      var ziplist = [];\n      for (const i in ids) {\n        var obj = {\n          \"postal_code\": Number(zips[i]),\n          \"place_id\": ids[i]\n        };\n        ziplist.push(obj);\n      }\n      storeValue('zipList', ziplist);\n    });\n  });\n}"
               ],
               "timeoutInMillisecond": 10000
             }

@@ -36,9 +36,9 @@
     "mobileTopRow": 11,
     "onURLChanged": "",
     "responsiveBehavior": "fill",
-    "originalTopRow": 20,
+    "originalTopRow": 19,
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
     "mobileLeftColumn": 8,
-    "originalBottomRow": 84,
+    "originalBottomRow": 83,
     "onMessageReceived": ""
 }
