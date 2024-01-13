@@ -10,7 +10,8 @@
     "leftColumn": 1,
     "dynamicBindingPathList": [
         {"key": "accentColor"},
-        {"key": "borderRadius"}
+        {"key": "borderRadius"},
+        {"key": "defaultText"}
     ],
     "labelStyle": "",
     "inputType": "TEXT",
@@ -30,7 +31,7 @@
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
     "originalBottomRow": 34,
     "mobileBottomRow": 32,
-    "widgetName": "min_price",
+    "widgetName": "min_year",
     "displayName": "Input",
     "searchTags": [
         "form",
@@ -50,12 +51,12 @@
     "key": "hlu3ct908q",
     "labelTextSize": "1rem",
     "isDeprecated": false,
-    "rightColumn": 30,
-    "widgetId": "v96wu4834u",
+    "rightColumn": 29,
+    "widgetId": "v291qy8frw",
     "errorMessage": "Input a value within the allowable range: 1900-2023",
     "minWidth": 450,
-    "label": "Minimum Price",
-    "parentId": "3jb8tvoz21",
+    "label": "Minimum Year Built",
+    "parentId": "y9ds6ag77v",
     "labelAlignment": "left",
     "renderMode": "CANVAS",
     "mobileTopRow": 25,
@@ -64,6 +65,6 @@
     "mobileLeftColumn": 3,
     "maxDynamicHeight": 9000,
     "iconAlign": "left",
-    "defaultText": "",
+    "defaultText": "{{appsmith.store.miny}}",
     "minDynamicHeight": 4
 }

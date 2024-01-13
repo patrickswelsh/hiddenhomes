@@ -7,10 +7,11 @@
     "type": "INPUT_WIDGET_V2",
     "animateLoading": true,
     "resetOnSubmit": true,
-    "leftColumn": 1,
+    "leftColumn": 31,
     "dynamicBindingPathList": [
         {"key": "accentColor"},
-        {"key": "borderRadius"}
+        {"key": "borderRadius"},
+        {"key": "defaultText"}
     ],
     "labelStyle": "",
     "inputType": "TEXT",
@@ -30,7 +31,7 @@
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
     "originalBottomRow": 34,
     "mobileBottomRow": 32,
-    "widgetName": "max_hoa",
+    "widgetName": "min_days_on_mkt",
     "displayName": "Input",
     "searchTags": [
         "form",
@@ -50,11 +51,11 @@
     "key": "hlu3ct908q",
     "labelTextSize": "1rem",
     "isDeprecated": false,
-    "rightColumn": 30,
-    "widgetId": "78f6xiwyto",
+    "rightColumn": 61,
+    "widgetId": "yvl1dyws1x",
     "errorMessage": "Input a value within the allowable range: 1900-2023",
     "minWidth": 450,
-    "label": "Max Monthly HOA Fee",
+    "label": "Min Days on Market",
     "parentId": "ldgeihfnkn",
     "labelAlignment": "left",
     "renderMode": "CANVAS",
@@ -64,6 +65,6 @@
     "mobileLeftColumn": 3,
     "maxDynamicHeight": 9000,
     "iconAlign": "left",
-    "defaultText": "",
+    "defaultText": "{{appsmith.store.mind}}",
     "minDynamicHeight": 4
 }

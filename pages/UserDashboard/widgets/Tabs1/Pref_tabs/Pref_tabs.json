@@ -1,6 +1,6 @@
 {
     "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-    "widgetName": "tab_applicantDetails",
+    "widgetName": "Pref_tabs",
     "borderColor": "#E0DEDE",
     "isCanvas": true,
     "dynamicPropertyPathList": [

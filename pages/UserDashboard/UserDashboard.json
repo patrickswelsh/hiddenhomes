@@ -29,6 +29,17 @@
         "layoutOnLoadActions": [
           [
             {
+              "id": "UserDashboard_Prefs.getPrefs",
+              "name": "Prefs.getPrefs",
+              "collectionId": "UserDashboard_Prefs",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async function () {\n  return GetPrefs.run().then(data => {\n    var typs = [];\n    if (data[0] == undefined) {\n      storeValue('typs', undefined);\n      storeValue('miny', undefined);\n      storeValue('maxy', undefined);\n      storeValue('minl', undefined);\n      storeValue('maxl', undefined);\n      storeValue('minp', undefined);\n      storeValue('maxp', undefined);\n      storeValue('minb', undefined);\n      storeValue('maxb', undefined);\n      storeValue('mins', undefined);\n      storeValue('maxs', undefined);\n      storeValue('keywords', undefined);\n      storeValue('minh', undefined);\n      storeValue('mind', undefined);\n    } else {\n      if (data[0]['single_family']) typs.push('single_family');\n      if (data[0]['multi_family']) typs.push('multi_family');\n      if (data[0]['mobile_home']) typs.push('mobile');\n      if (data[0]['land']) typs.push('land');\n      if (data[0]['farm']) typs.push('farm');\n      storeValue('typs', typs);\n      storeValue('miny', data[0]['min_built']);\n      storeValue('maxy', data[0]['max_built']);\n      storeValue('minl', String(data[0]['min_lot']));\n      storeValue('maxl', String(data[0]['max_lot']));\n      storeValue('minp', data[0]['min_price']);\n      storeValue('maxp', data[0]['max_price']);\n      storeValue('minb', String(data[0]['min_beds']));\n      storeValue('maxb', String(data[0]['max_beds']));\n      storeValue('mins', String(data[0]['min_sqft']));\n      storeValue('maxs', String(data[0]['max_sqft']));\n      storeValue('keywords', String(data[0]['keywords']));\n      storeValue('minh', String(data[0]['min_hoa']));\n      storeValue('mind', String(data[0]['min_days_on_mkt']));\n    }\n  });\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
               "id": "UserDashboard_ZipPrep.getIds",
               "name": "ZipPrep.getIds",
               "collectionId": "UserDashboard_ZipPrep",

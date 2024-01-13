@@ -1,16 +1,18 @@
 export default {
 	async setPrefs () {
-		if (min_year == ""){var miny = null}else{miny = Number(min_year.text)}
-		if (max_year == ""){var maxy = null}else{maxy = Number(max_year.text)} 
+		if (min_year.text == "" | min_year.text == undefined ){var miny = null}else{miny = Number(min_year.text)}
+		if (max_year.text == "" | max_year.text == undefined){var maxy = null}else{maxy = Number(max_year.text)} 
 		if (min_lot.selectedOptionValue == ""){var minl = null}else{minl = Number(min_lot.selectedOptionValue)} 
 		if (max_lot.selectedOptionValue == ""){var maxl = null}else{maxl = Number(max_lot.selectedOptionValue)}
-		if (min_price.text == ""){var minp = null}else{minp = Number(min_price.text)} 
-		if (max_price.text == ""){var maxp = null}else{maxp = Number(max_price.text)} 
+		if (min_price.text == "" | min_price.text == undefined){var minp = null}else{minp = Number(min_price.text)} 
+		if (max_price.text == "" | max_price.text == undefined){var maxp = null}else{maxp = Number(max_price.text)} 
 		if (min_beds.selectedOptionValue == ""){var minb = null}else{minb = Number(min_beds.selectedOptionValue)} 
 		if (max_beds.selectedOptionValue == ""){var maxb = null}else{maxb = Number(max_beds.selectedOptionValue)}
 		if (min_sqft.selectedOptionValue == ""){var mins = null}else{mins = Number(min_sqft.selectedOptionValue)} 
 		if (max_sqft.selectedOptionValue == ""){var maxs = null}else{maxs = Number(max_sqft.selectedOptionValue)} 
 		if (max_hoa.text == ""){var maxh = null}else{maxh = Number(max_hoa.text)}
+		if (min_days_on_mkt.text == ""){var mind = null}else{mind = Number(min_days_on_mkt.text)}
+		if (keywords.text == ""){var keyw = null}else{keyw = keywords.text}
 		
 		storeValue('prefs', [{
 			"user_id": appsmith.store.uid,
@@ -33,7 +35,9 @@ export default {
 			"max_beds": maxb,
 			"min_sqft": mins,
 			"max_sqft": maxs,
-			"keywords": keywords.text
+			"keywords": keyw,
+			"max_hoa": maxh,
+			"min_days_on_mkt": mind
 			
 		}])
 		 
@@ -56,6 +60,8 @@ export default {
 			storeValue('mins', undefined)
 			storeValue('maxs', undefined)
 			storeValue('keywords', undefined)
+			storeValue('minh',undefined)
+			storeValue('mind',undefined)
 			}else{
 			if (data[0]['single_family'])(typs.push('single_family'))
 			if (data[0]['multi_family'])(typs.push('multi_family'))
@@ -74,7 +80,9 @@ export default {
 			storeValue('maxb', String(data[0]['max_beds']))
 			storeValue('mins', String(data[0]['min_sqft']))
 			storeValue('maxs', String(data[0]['max_sqft']))
-			storeValue('keywords', String(data[0]['keywords']))}
+			storeValue('keywords', String(data[0]['keywords']))
+			storeValue('minh', String(data[0]['min_hoa']))
+			storeValue('mind', String(data[0]['min_days_on_mkt']))}
 
 		});
 	}

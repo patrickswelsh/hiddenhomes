@@ -10,7 +10,8 @@
     "leftColumn": 31,
     "dynamicBindingPathList": [
         {"key": "accentColor"},
-        {"key": "borderRadius"}
+        {"key": "borderRadius"},
+        {"key": "defaultText"}
     ],
     "labelStyle": "",
     "inputType": "TEXT",
@@ -64,6 +65,6 @@
     "mobileLeftColumn": 3,
     "maxDynamicHeight": 9000,
     "iconAlign": "left",
-    "defaultText": "",
+    "defaultText": "{{appsmith.store.maxy}}",
     "minDynamicHeight": 4
 }

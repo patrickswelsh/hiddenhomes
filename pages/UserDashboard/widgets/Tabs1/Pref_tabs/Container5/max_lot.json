@@ -6,7 +6,7 @@
     "labelWidth": 5,
     "type": "SELECT_WIDGET",
     "serverSideFiltering": false,
-    "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( `217800`))(max_size.options, max_size.serverSideFiltering) }}",
+    "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( appsmith.store.maxl))(max_lot.options, max_lot.serverSideFiltering) }}",
     "animateLoading": true,
     "leftColumn": 32,
     "dynamicBindingPathList": [
@@ -26,7 +26,7 @@
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
     "originalBottomRow": 65,
     "mobileBottomRow": 56,
-    "widgetName": "max_size",
+    "widgetName": "max_lot",
     "isFilterable": true,
     "dynamicPropertyPathList": [{"key": "sourceData"}],
     "displayName": "Select",

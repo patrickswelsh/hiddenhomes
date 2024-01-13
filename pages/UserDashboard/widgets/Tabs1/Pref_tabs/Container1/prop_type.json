@@ -6,18 +6,18 @@
     "labelWidth": 5,
     "type": "MULTI_SELECT_WIDGET_V2",
     "serverSideFiltering": false,
-    "defaultOptionValue": [
-        "GREEN",
-        "RED"
-    ],
+    "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( appsmith.store.typs))(prop_type.options, prop_type.serverSideFiltering) }}",
     "animateLoading": true,
     "leftColumn": 0,
-    "dynamicBindingPathList": [{"key": "accentColor"}],
+    "dynamicBindingPathList": [
+        {"key": "accentColor"},
+        {"key": "defaultOptionValue"}
+    ],
     "labelTooltip": "Select the property types that you would like to include in your search.",
     "labelStyle": "",
     "placeholderText": "Select option(s)",
     "isDisabled": false,
-    "isRequired": false,
+    "isRequired": true,
     "dynamicHeight": "FIXED",
     "accentColor": "{{appsmith.theme.colors.primaryColor}}",
     "isVisible": true,

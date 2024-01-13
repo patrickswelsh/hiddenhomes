@@ -7,10 +7,11 @@
     "type": "INPUT_WIDGET_V2",
     "animateLoading": true,
     "resetOnSubmit": true,
-    "leftColumn": 1,
+    "leftColumn": 31,
     "dynamicBindingPathList": [
         {"key": "accentColor"},
-        {"key": "borderRadius"}
+        {"key": "borderRadius"},
+        {"key": "defaultText"}
     ],
     "labelStyle": "",
     "inputType": "TEXT",
@@ -30,7 +31,7 @@
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
     "originalBottomRow": 34,
     "mobileBottomRow": 32,
-    "widgetName": "keywords",
+    "widgetName": "max_price",
     "displayName": "Input",
     "searchTags": [
         "form",
@@ -51,11 +52,11 @@
     "labelTextSize": "1rem",
     "isDeprecated": false,
     "rightColumn": 61,
-    "widgetId": "nbphmy0sje",
+    "widgetId": "c8rwbvk5fx",
     "errorMessage": "Input a value within the allowable range: 1900-2023",
     "minWidth": 450,
-    "label": "Keywords",
-    "parentId": "gxil891blb",
+    "label": "Maximum Price",
+    "parentId": "3jb8tvoz21",
     "labelAlignment": "left",
     "renderMode": "CANVAS",
     "mobileTopRow": 25,
@@ -64,6 +65,6 @@
     "mobileLeftColumn": 3,
     "maxDynamicHeight": 9000,
     "iconAlign": "left",
-    "defaultText": "",
+    "defaultText": "{{appsmith.store.maxp}}",
     "minDynamicHeight": 4
 }
