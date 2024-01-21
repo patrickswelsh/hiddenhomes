@@ -12,7 +12,7 @@
         "group"
     ],
     "topRow": 122,
-    "bottomRow": 211,
+    "bottomRow": 154,
     "parentRowSpace": 10,
     "type": "CONTAINER_WIDGET",
     "hideCard": false,
@@ -32,7 +32,7 @@
         "widgetName": "Canvas11Copy",
         "displayName": "Canvas",
         "topRow": 0,
-        "bottomRow": 880,
+        "bottomRow": 310,
         "parentRowSpace": 1,
         "type": "CANVAS_WIDGET",
         "canExtend": false,
@@ -81,6 +81,6 @@
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
     "mobileLeftColumn": 0,
     "maxDynamicHeight": 9000,
-    "originalBottomRow": 211,
+    "originalBottomRow": 154,
     "minDynamicHeight": 10
 }
