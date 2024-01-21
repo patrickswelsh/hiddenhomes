@@ -11,8 +11,8 @@
         "click",
         "submit"
     ],
-    "topRow": 20,
-    "bottomRow": 26,
+    "topRow": 18,
+    "bottomRow": 24,
     "tooltip": "Up",
     "type": "BUTTON_WIDGET",
     "hideCard": false,

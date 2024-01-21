@@ -63,7 +63,7 @@
             "widgetName": "Canvas9",
             "displayName": "Canvas",
             "topRow": 1,
-            "bottomRow": 1390,
+            "bottomRow": 1420,
             "parentRowSpace": 1,
             "type": "CANVAS_WIDGET",
             "canExtend": false,
@@ -141,7 +141,7 @@
     "dynamicHeight": "AUTO_HEIGHT",
     "widgetId": "6vb23lwk9d",
     "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-    "defaultTab": "Borrower Details",
+    "defaultTab": "Account Details",
     "onTabSelected": "{{Prefs.getPrefs();\nZipPrep.getIds();}}",
     "shouldShowTabs": true,
     "minWidth": 450,
@@ -180,6 +180,6 @@
     "originalTopRow": 6,
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
     "maxDynamicHeight": 9000,
-    "originalBottomRow": 149,
+    "originalBottomRow": 51,
     "minDynamicHeight": 10
 }

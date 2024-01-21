@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "Logout",
+    "pageId": "Step0BasicInfo",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Step0BasicInfo_Logout",
+  "deleted": false,
+  "gitSyncId": "658df11f76a7bd1810191c14_65ad65274ffa034b7c301b1e"
+}

@@ -10,8 +10,8 @@
         "visuals",
         "visualisations"
     ],
-    "topRow": 22,
-    "bottomRow": 72,
+    "topRow": 21,
+    "bottomRow": 71,
     "parentRowSpace": 10,
     "type": "CHART_WIDGET",
     "hideCard": false,
@@ -31,7 +31,7 @@
         {"key": "accentColor"},
         {"key": "fontFamily"}
     ],
-    "leftColumn": 0,
+    "leftColumn": 10,
     "customFusionChartConfig": {
         "type": "column2d",
         "dataSource": {

@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "usrdetails",
+    "pageId": "UserDashboard",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "UserDashboard_usrdetails",
+  "deleted": false,
+  "gitSyncId": "658df11f76a7bd1810191c14_65ad5d6e344e1d5915010e42"
+}

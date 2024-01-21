@@ -17,7 +17,7 @@
     "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
     "parentColumnSpace": 23.640625,
     "dynamicTriggerPathList": [],
-    "leftColumn": 1,
+    "leftColumn": 0,
     "dynamicBindingPathList": [
         {"key": "truncateButtonColor"},
         {"key": "fontFamily"},
@@ -29,7 +29,7 @@
     "text": "RE Analytics Dashboard",
     "key": "rsu74rjjep",
     "isDeprecated": false,
-    "rightColumn": 28,
+    "rightColumn": 27,
     "textAlign": "LEFT",
     "dynamicHeight": "FIXED",
     "widgetId": "ljytj2euio",
