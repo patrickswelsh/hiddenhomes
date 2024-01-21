@@ -40,5 +40,5 @@
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
     "mobileLeftColumn": 8,
     "originalBottomRow": 83,
-    "onMessageReceived": ""
+    "onMessageReceived": "{{ZipPrep.zip();}}"
 }
