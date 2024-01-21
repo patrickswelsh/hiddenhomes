@@ -1,0 +1,8 @@
+{
+	"id" : {{appsmith.store.uid}},
+	"email" : {{Email.text}},
+	"first_name" : {{First_Name.text}},
+	"last_name" : {{Last_Name.text}},
+	"phone_number" : {{Phone.text}},
+	"account_type" : {{appsmith.store.account_type}}
+}

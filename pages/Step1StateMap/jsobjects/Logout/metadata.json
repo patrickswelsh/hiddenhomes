@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "Logout",
+    "pageId": "Step1StateMap",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Step1StateMap_Logout",
+  "deleted": false,
+  "gitSyncId": "658df11f76a7bd1810191c14_65ad652e77daa66efb534bd1"
+}

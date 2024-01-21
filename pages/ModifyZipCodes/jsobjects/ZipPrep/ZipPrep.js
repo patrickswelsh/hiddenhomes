@@ -14,6 +14,16 @@ export default {
 			}
 			storeValue('idRead',String(ids))
 			storeValue('zipRead',String(zips))
+			
+			var	ziplist = []
+			for (const i in ids){
+				var obj = {
+				"postal_code" : Number(zips[i]),
+				"place_id" : ids[i]
+			}
+				ziplist.push(obj)
+			}
+				storeValue('zipList', ziplist)
 		})
 			})
 		
@@ -37,7 +47,7 @@ export default {
 	},
 	
 updateprefs () {
-DeletePrefs.run().then(AddZips.run().then(navigateTo('Step3Preferences')))
+DeletePrefs.run().then(AddZips.run())
 }
 	
 }

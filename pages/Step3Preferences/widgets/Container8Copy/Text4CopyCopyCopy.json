@@ -26,7 +26,7 @@
     ],
     "shouldTruncate": false,
     "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-    "text": "Pricing Plan",
+    "text": "Activate Subscription",
     "key": "xjdofbsvc4",
     "isDeprecated": false,
     "rightColumn": 63,

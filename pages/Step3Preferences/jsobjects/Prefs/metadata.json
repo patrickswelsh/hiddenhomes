@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "Prefs",
+    "pageId": "Step3Preferences",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Step3Preferences_Prefs",
+  "deleted": false,
+  "gitSyncId": "658df11f76a7bd1810191c14_658ef378848d9a25ab91d6de"
+}

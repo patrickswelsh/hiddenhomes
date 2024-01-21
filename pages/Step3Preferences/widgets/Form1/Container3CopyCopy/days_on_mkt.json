@@ -67,6 +67,6 @@
     "mobileLeftColumn": 3,
     "maxDynamicHeight": 9000,
     "iconAlign": "left",
-    "defaultText": "{{appsmith.store.minmkt}}",
+    "defaultText": "{{appsmith.store.mind}}",
     "minDynamicHeight": 4
 }
