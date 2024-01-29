@@ -30,7 +30,7 @@
     "shouldTruncate": false,
     "borderWidth": "2.5",
     "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-    "text": "Per House Cost",
+    "text": "Per Home Cost",
     "key": "3fgww9yjf2",
     "isDeprecated": false,
     "rightColumn": 45,
