@@ -31,6 +31,10 @@
     {
       "id": "User Managment",
       "isDefault": false
+    },
+    {
+      "id": "newsublanding",
+      "isDefault": false
     }
   ],
   "viewMode": false,

@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "usrdetails",
+    "pageId": "newsublanding",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "newsublanding_usrdetails",
+  "deleted": false,
+  "gitSyncId": "658df11f76a7bd1810191c14_65fee4318a180405eae454b9"
+}

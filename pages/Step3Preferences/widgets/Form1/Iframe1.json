@@ -6,8 +6,8 @@
     "displayName": "Iframe",
     "iconSVG": "https://appcdn.appsmith.com/static/media/icon.19c3fa45ba777cc28a04f390d5703b53.svg",
     "searchTags": ["embed"],
-    "topRow": 62,
-    "bottomRow": 104,
+    "topRow": 64,
+    "bottomRow": 106,
     "parentRowSpace": 10,
     "source": "https://mapiframe.vercel.app/?lat={{Lat.text}}&lng={{Lng.text}}",
     "type": "IFRAME_WIDGET",
@@ -36,9 +36,9 @@
     "mobileTopRow": 11,
     "onURLChanged": "",
     "responsiveBehavior": "fill",
-    "originalTopRow": 62,
+    "originalTopRow": 64,
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
     "mobileLeftColumn": 8,
-    "originalBottomRow": 104,
+    "originalBottomRow": 106,
     "onMessageReceived": ""
 }

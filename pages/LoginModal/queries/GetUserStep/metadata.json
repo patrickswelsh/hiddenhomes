@@ -59,7 +59,8 @@
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": []
+    "userPermissions": [],
+    "createdAt": "2023-12-28T22:05:19Z"
   },
   "id": "LoginModal_GetUserStep",
   "deleted": false,

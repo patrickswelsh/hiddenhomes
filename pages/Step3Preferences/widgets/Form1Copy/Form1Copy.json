@@ -8,7 +8,7 @@
     "iconSVG": "https://appcdn.appsmith.com/static/media/icon.5d6d2ac5cb1aa68bcd9b14f11c56b44a.svg",
     "searchTags": ["group"],
     "topRow": 1,
-    "bottomRow": 15,
+    "bottomRow": 21,
     "parentRowSpace": 10,
     "type": "FORM_WIDGET",
     "hideCard": false,
@@ -24,7 +24,7 @@
         "widgetName": "Canvas2Copy",
         "displayName": "Canvas",
         "topRow": 0,
-        "bottomRow": 130,
+        "bottomRow": 190,
         "parentRowSpace": 1,
         "type": "CANVAS_WIDGET",
         "canExtend": false,
@@ -70,6 +70,6 @@
     "borderRadius": "1.5rem",
     "mobileLeftColumn": 8,
     "maxDynamicHeight": 9000,
-    "originalBottomRow": 15,
+    "originalBottomRow": 21,
     "minDynamicHeight": 10
 }
